@@ -16,6 +16,9 @@
 
 **Protip**: If you're *really* keen on keeping your dependencies self-contained, you can `npm install --save-dev mocha`. npm will still be able to resolve the `mocha` reference, and you can always run the locally installed mocha with `./node_modules/.bin/mocha`.
 
+#### More
+* Check out [Testling's mocha guide](https://ci.testling.com/guide/mocha) for running your [cross-browser tests](../browser/) with mocha.
+
 ### Jasmine
 [Jasmine] shares basic semantics with [Mocha], but also includes lots of nice assertion helpers, object [spies](http://jasmine.github.io/2.2/introduction.html#section-Spies), and async support.
 
@@ -24,6 +27,9 @@
 
 ### Tape
 [Tape] is a [TAP]-producing test harness for Node with great asynchronous support.
+
+#### More
+* Check out the [Testling's tape guide](https://ci.testling.com/guide/tape) for running your [cross-browser tests](../browser/) with tape.
 
 ### QUnit
 [QUnit] is a unit testing framework for Node and the browser developed by and for the jQuery team. It has a nice-looking browser test runner and lots of [plugins](http://qunitjs.com/plugins/) for more specific needs.
