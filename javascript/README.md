@@ -1,7 +1,5 @@
 # JavaScript Testing
 
-## Node Testing
-
 ### Mocha
 [Mocha] is a slick, simple testing framework for Node and browser JavaScript with asynchronous support and a [slew of reporters](http://mochajs.org/#reporters), including [TAP] output.
 
