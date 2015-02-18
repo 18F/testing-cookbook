@@ -1,11 +1,11 @@
 # Browser Testing
-Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Browser tests typically break down into three components:
+Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Browser tests typically consist of three distinct components:
 
 1. A dev server, e.g., a Django or Rails application running on the developer's personal computer.
 2. A real or virtual web browser that can be programmatically controlled in another environment.
 3. A test suite that opens a real or virtual web browser, tells it to navigate to the URL of the dev server and runs tests.
 
-We're going to focus here on 2 and 3 above, with the assumption that you already know how to run your app's dev server.
+This page focuses on items 2 and 3. For testing server logic, refer to the language- and stack-specific documentation [back up top](/). For more information on client-side unit tests, check out the [JavaScript guide](/javascript/).
 
 ## Real and Virtual Browsers
 Browser testing used to be done manually: testers fired up their suite of browsers in whatever versions the app was expected to accommodate (e.g., latest Chrome, Firefox 3.6, or Internet Explorer 9), and on whichever platforms they had access to (Windows, OS X, or iOS), opened up the URL(s) to test, and ran through a *literal* script of actions. Quality Assurance teams were typically responsible for these types of tests in larger companies, and many had banks of physical computers (and mobile devices) running each combination of OS and browser version in isolation.
@@ -100,3 +100,4 @@ describe('library', function() {
 [CasperJS]: http://casperjs.org/
 [Nightwatch]: http://nightwatchjs.org/
 [SlimerJS]: http://slimerjs.org/
+[VirtualBox]: http://virtualbox.org/
