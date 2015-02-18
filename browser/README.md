@@ -12,6 +12,8 @@ Browser testing used to be done manually: testers fired up their suite of browse
 
 The next step in the evolution of browser testing was virualization environments. Applications such as [VirtualBox] allowed them to fire up virtualized operating systems on a single computer so that they could run, for instance, Internet Explorer for Windows on their Mac laptop. More recently, web-based virtualization tools like [Sauce Labs] and [Browserling] gave us the ability to interactively test web sites in practically any browser/version/OS combination at the click of a link.
 
+> **Note**: Manual testing is important! Check out the [VirtualBox guide](VirtualBox.md) for more information about using virtual machines to test old browsers (like Internet Explorer) from the comfort of your Mac.
+
 It gets even better, though: web-based virtualization environments have hooks of their own that allow us to script both the creation of virtual browsers to test our apps *and* determine the outcome of automated tests in each of them. Let's look at each of the tools to see how this works.
 
 ## Selenium
