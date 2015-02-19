@@ -11,5 +11,5 @@ For more involved tests, take a look at [unittest].
 
 
 [nose]: https://nose.readthedocs.org/en/latest/
-[doctest]: https://docs.python.org/2/library/doctest.html
-[unittest]: https://docs.python.org/2/library/unittest.html
+[doctest]: https://docs.python.org/3.4/library/doctest.html
+[unittest]: https://docs.python.org/3.4/library/unittest.html
