@@ -1,5 +1,7 @@
 ## Browser Testing with VirtualBox
-[VirtualBox] is a virtualization tool that allows you to run "guest" operating systems *within* your computer's native (or "host") OS. Some 18F projects use VirtualBox with [Vagrant] to create isolated development environments (namely, Linux) that more closely match their production environments. But, thanks to Microsoft, we can also download canned Windows OS virtual machines and run them on our Macs to interactively test sites in Internet Explorer. Here's how:
+[VirtualBox] is a virtualization tool that allows you to run "guest" operating systems *within* your computer's native (or "host") OS. Some 18F projects use VirtualBox with [Vagrant] to create isolated development environments (namely, Linux) that more closely match their production environments. Thanks to Microsoft, we can also download canned Windows OS virtual machines and run them on our Macs to interactively test sites in Internet Explorer.
+
+> Installing VirtualBox and downloading the Windows VMs can be time consuming. If you don't have the time or you'd rather not do this, check out some [other testing services](services.md).
 
 ### <a name="download-virtualbox"></a> 1. Download VirtualBox
 Visit [virtualbox.org](https://www.virtualbox.org/wiki/Downloads), find the **VirtualBox 4.X.XX for OS X hosts** item under **VirtualBox platform packages**, and click the **x86/amd64** link next to it:
