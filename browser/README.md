@@ -1,5 +1,9 @@
 # Browser Testing
-Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser.
+Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Also here:
+
+* The [automated browser testing guide](automation.md) lists tools and techniques for browser automation
+* The [VirtualBox testing guide](VirtualBox.md) gets you up and running with [VirtualBox] for manual testing
+* The [hosted service guide](services.md) lists resources for manual testing and screenshot-taking
 
 ## Manual Testing
 Manual browser testing involves simply opening up the URL of the site you're testing in one or more browsers and interacting with it. You can install as many browsers as you'd like on your computer, but at some point you will likely need to test other browers, platforms, and devices. See the [VirtualBox guide](VirtualBox.md) for setting up a cross-platform testing environment on your own computer, or peruse the [service guide](services.md) for services that can help you interactively test and take screenshots of sites with lots of different browsers.
