@@ -17,8 +17,6 @@ Automated cross-browser testing involves writing tests and using tools to script
     * run in the browser directly (like [QUnit]), or
     * control the browser remotely and test the results of scripted interactions, as in [Selenium].
 
-> **Note**: Manual testing is important! Check out the [VirtualBox guide](VirtualBox.md) for more information about using virtual machines to test old browsers (like Internet Explorer) from the comfort of your Mac, or try some [other services](services.md).
-
 Many web-based virtualization environments (namely [Sauce Labs]) have APIs of their own that allow us to script both the creation of virtual browsers to test our apps *and* determine the outcome of automated tests in each of them. Take a look at the [automated browser testing guide](automation.md) for more info.
 
 [Selenium]: http://docs.seleniumhq.org/
