@@ -7,14 +7,14 @@ These services allow you to run virtual browsers right in your browser:
 * [Sauce Labs] also [requires an account](https://saucelabs.com/pricing), but gives you [tons of platforms](https://saucelabs.com/platforms/) and provides a native application, which tends to be marginally faster than the in-browser environment. It's also [free for open source projects](https://saucelabs.com/opensauce/).
 * [TestingBot] has a [free trial plan](http://testingbot.com/pricing) and supports [lots of different platforms](http://testingbot.com/support/getting-started/browsers.html).
 
-### Screenshot Services
+## Screenshot Services
 These services can be used to take screenshots of public sites:
 
 * [Browsera] visually analyzes the layout differences between browsers. Its [free plan is very limited](https://www.browsera.com/plans).
 * [Browser Shots] takes screenshots with lots of different browsers at once and presents them to you on one page for comparison. **No IE support, unfortunately.**
 * [IE NetRenderer] takes screenshots with different versions of IE (5.5, 6, 7, 8, 9, 10, and 11 as of this writing).
 
-### Other Testing Tools
+## Other Testing Tools
 
 * [Ghostlab] *looks* very cool (especially for mobile testing), but it does not appear to run virtual machines.
 * [Spoon's](https://spoon.net) [Browser Sandbox] has [a free plan for open source](https://spoon.net/pricing) (for automated testing only), but it doesn't include legacy OS support. It's also Windows-only.
