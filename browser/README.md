@@ -1,5 +1,5 @@
 # Browser Testing
-Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Also here:
+Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Included in this directory:
 
 * The [automated browser testing guide](automation.md) lists tools and techniques for browser automation
 * The [VirtualBox testing guide](VirtualBox.md) gets you up and running with [VirtualBox] for manual testing
