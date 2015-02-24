@@ -39,8 +39,13 @@ It's a great idea to use nose from the very start, and it's not hard to start us
 
 Use nose's "fail fast" feature when you've got a lot of test failures, but are just trying to see and fix the first failed test. Run that test quickly, fix, and repeat, moving on to the next.
 
+#### Capture/Suppress STDOUT/Logs
+By default, Nose captures STDOUT and logging output. This means that when you have test failures, it will capture STDOUT and logging output for each failed test and print it 
+along with the failure message and stack trace, rather than letting STDOUT go to the console at runtime and get mixed up with everything else that might be going to STDOUT. 
+Outputs become much more useful when they are split up by their test of origin.
+
 ### How to Use It
-Projects without their own custom test runner, it's just a matter of running `pip install nose` and then invoking `nosetests` from the command line.
+In projects without their own custom test runner, it's just a matter of running `pip install nose` and then invoking `nosetests` from the command line.
 
 In the case of Django, which has its own custom test runner, you'll need to do a little more work (but just a little). TODO: link to django-nose
 
