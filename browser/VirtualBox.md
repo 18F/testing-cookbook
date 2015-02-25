@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /browser/virtualbox/
+---
 ## Browser Testing with VirtualBox
 [VirtualBox] is a virtualization tool that allows you to run "guest" operating systems *within* your computer's native (or "host") OS. Some 18F projects use VirtualBox with [Vagrant] to create isolated development environments (namely, Linux) that more closely match their production environments. Thanks to Microsoft, we can also download canned Windows OS virtual machines and run them on our Macs to interactively test sites in Internet Explorer.
 
