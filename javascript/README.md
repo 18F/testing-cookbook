@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /javascript/
+---
 # JavaScript Testing
 
 ### Mocha

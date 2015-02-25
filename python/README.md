@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /python/
+---
 # Python Testing
 
 ## The `doctest` module

@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /browser/services/
+---
 ## Browser Testing Services
 These services allow you to run virtual browsers right in your browser:
 

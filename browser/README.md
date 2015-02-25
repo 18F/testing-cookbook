@@ -1,12 +1,16 @@
+---
+layout: default
+permalink: /browser/
+---
 # Browser Testing
 Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Included in this directory:
 
-* The [automated browser testing guide](automation.md) lists tools and techniques for browser automation
-* The [VirtualBox testing guide](VirtualBox.md) gets you up and running with [VirtualBox] for manual testing
-* The [hosted service guide](services.md) lists resources for manual testing and screenshot-taking
+* The [automated browser testing guide](automation/) lists tools and techniques for browser automation
+* The [VirtualBox testing guide](virtualbox/) gets you up and running with [VirtualBox] for manual testing
+* The [hosted service guide](services/) lists resources for manual testing and screenshot-taking
 
 ## Manual Testing
-Manual browser testing involves simply opening up the URL of the site you're testing in one or more browsers and interacting with it. You can install as many browsers as you'd like on your computer, but at some point you will likely need to test other browers, platforms, and devices. See the [VirtualBox guide](VirtualBox.md) for setting up a cross-platform testing environment on your own computer, or peruse the [service guide](services.md) for services that can help you interactively test and take screenshots of sites with lots of different browsers.
+Manual browser testing involves simply opening up the URL of the site you're testing in one or more browsers and interacting with it. You can install as many browsers as you'd like on your computer, but at some point you will likely need to test other browers, platforms, and devices. See the [VirtualBox guide](virtualbox/) for setting up a cross-platform testing environment on your own computer, or peruse the [service guide](services/) for services that can help you interactively test and take screenshots of sites with lots of different browsers.
 
 ## Automated Testing
 Automated cross-browser testing involves writing tests and using tools to script the launching of one or more browsers and the execution of your tests in each of them. The automated browser testing stack typically consists of three distinct components:
@@ -17,7 +21,7 @@ Automated cross-browser testing involves writing tests and using tools to script
     * run in the browser directly (like [QUnit]), or
     * control the browser remotely and test the results of scripted interactions, as in [Selenium].
 
-Many web-based virtualization environments (namely [Sauce Labs]) have APIs of their own that allow us to script both the creation of virtual browsers to test our apps *and* determine the outcome of automated tests in each of them. Take a look at the [automated browser testing guide](automation.md) for more info.
+Many web-based virtualization environments (namely [Sauce Labs]) have APIs of their own that allow us to script both the creation of virtual browsers to test our apps *and* determine the outcome of automated tests in each of them. Take a look at the [automated browser testing guide](automation/) for more info.
 
 [Selenium]: http://docs.seleniumhq.org/
 [Sauce Labs]: https://saucelabs.com/

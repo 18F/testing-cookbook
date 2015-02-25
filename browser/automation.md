@@ -1,5 +1,9 @@
+---
+layout: default
+permalink: /browser/automation/
+---
 # Automated Browser Testing
-This is an overview of a selection of automated testing tools for frontend [integration tests]. See the [README](README.md) for background.
+This is an overview of a selection of automated testing tools for frontend [integration tests]. See the [README](..) for background.
 
 ## Selenium
 [Selenium] is a suite of tools for launching, controlling browsers and testing a variety of browsers. The tools are:
