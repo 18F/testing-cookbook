@@ -1,4 +1,5 @@
-# testing-cookbook
+# Testing Cookbook
+
 The 18F testing cookbook contains recipes and best practices for automated and manual testing in lots of different environments, languages, stacks and platforms. Check 'em out:
 
 * [JavaScript](javascript/) testing in Node and the browser
