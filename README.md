@@ -9,4 +9,4 @@ The 18F testing cookbook contains recipes and best practices for automated and m
 * [JavaScript](javascript/) testing in Node and the browser
 * [Python](python/) testing in pure Python, Django and Flask, etc.
 * [Ruby](ruby/) testing with RSpec, minitest, etc.
-* [Browser testing](browser/) and [VirtualBox](browser/VirtualBox.md)
+* [Browser testing](browser/) and [VirtualBox](browser/virtualbox/)
