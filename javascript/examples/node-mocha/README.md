@@ -15,7 +15,7 @@ To execute the tests, you'll need to have a clone of the repo, then `cd` to this
 npm install --dev
 ```
 
-This will install the development dependencies (just `mocha` in this case). Then you can run the tests with:
+This will install the development dependencies (just `mocha` in this case) into the `node_modules` directory locally (which, thanks to our `.gitignore`, will be ignored by git). Then you can run the tests with:
 
 ```sh
 npm test
