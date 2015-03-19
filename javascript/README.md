@@ -17,7 +17,7 @@
 [Tape] is a [TAP]-producing test harness for Node with great asynchronous support.
 
 #### Resources
-* Check out the [Testling's tape guide](https://ci.testling.com/guide/tape) for running your [cross-browser tests](../browser/) with tape.
+* Check out the [Testling tape guide](https://ci.testling.com/guide/tape) for running your [cross-browser tests](../browser/) with tape.
 
 ### QUnit
 [QUnit] is a unit testing framework for Node and the browser developed by and for the jQuery team. It has a nice-looking browser test runner and lots of [plugins](http://qunitjs.com/plugins/) for more specific needs.
