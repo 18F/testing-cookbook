@@ -1,7 +1,7 @@
 # Python Testing
 
 ## The `doctest` module
-With [doctest] you can write tests in your python docstrings. It's awesome.
+With [doctest] you can write tests in your python docstrings. Check out [the example](examples/doctest).
 
 ### What It Is
 
