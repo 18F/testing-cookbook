@@ -1,5 +1,5 @@
 // require the parent module, in this case a class constructor
-var Gadget = require('../');
+var Gadget = require('../gadget');
 // Node's assert module is a built-in
 var assert = require('assert');
 
@@ -17,7 +17,7 @@ describe('Gadget', function() {
   });
   
   it('but does it blend?', function() {
-    var gadget = new Gadget();
+    var gadget = new Gadget(200);
     assert.ok(gadget.blend('iPhone'));
   });
   
