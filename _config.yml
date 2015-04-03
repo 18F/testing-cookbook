@@ -1,5 +1,5 @@
 # Site settings
-title: Testing Cookbook
+title: 18F Testing Cookbook
 email: shawn.allen@gsa.gov
 description: >
   The 18F Testing Cookbook contains recipes and best practices for automated
@@ -23,7 +23,7 @@ permalink: pretty
 
 # DOCter bits after this
 
-name: 18F Testing Cookbook
+name: Testing Cookbook
 subtitle:
 
 # Author/Organization info to be displayed in the templates
