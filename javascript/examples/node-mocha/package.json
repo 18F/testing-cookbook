@@ -1,0 +1,17 @@
+{
+  "name": "node-mocha",
+  "version": "1.0.0",
+  "description": "This directory provides a simple example of writing unit tests for [Mocha](http://mochajs.com) in [Node](https://nodejs.org/).",
+  "main": "gadget.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}

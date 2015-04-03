@@ -5,20 +5,7 @@ permalink: /javascript/
 # JavaScript Testing
 
 ### Mocha
-[Mocha] is a slick, simple testing framework for Node and browser JavaScript with asynchronous support and a [slew of reporters](http://mochajs.org/#reporters), including [TAP] output.
-
-#### Node Usage
-1. Install with `npm install [-g] mocha`.
-2. Write your tests at `tests/*.js`.
-3. Run `mocha` and it'll output your test results to stdout.
-4. Optionally, set `mocha` as your test command in your `package.json` [scripts field](https://docs.npmjs.com/misc/scripts):
-```json
-"scripts": {
-  "test": "mocha"
-}
-```
-
-**Protip**: If you're *really* keen on keeping your dependencies self-contained, you can `npm install --save-dev mocha`. npm will still be able to resolve the `mocha` reference, and you can always run the locally installed mocha with `./node_modules/.bin/mocha`.
+[Mocha] is a slick, simple testing framework for Node and browser JavaScript with asynchronous support and a [slew of reporters](http://mochajs.org/#reporters), including [TAP] output. See the [node-mocha example](examples/node-mocha) for usage.
 
 #### Resources
 * Check out [Testling's mocha guide](https://ci.testling.com/guide/mocha) for running your [cross-browser tests](../browser/) with mocha.
@@ -34,7 +21,7 @@ permalink: /javascript/
 [Tape] is a [TAP]-producing test harness for Node with great asynchronous support.
 
 #### Resources
-* Check out the [Testling's tape guide](https://ci.testling.com/guide/tape) for running your [cross-browser tests](../browser/) with tape.
+* Check out the [Testling tape guide](https://ci.testling.com/guide/tape) for running your [cross-browser tests](../browser/) with tape.
 
 ### QUnit
 [QUnit] is a unit testing framework for Node and the browser developed by and for the jQuery team. It has a nice-looking browser test runner and lots of [plugins](http://qunitjs.com/plugins/) for more specific needs.
