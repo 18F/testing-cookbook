@@ -1,5 +1,5 @@
 ---
-permalink: /browser/selenium-sauce
+permalink: /browser/selenium-sauce/
 layout: default
 ---
 
