@@ -1,3 +1,8 @@
+---
+permalink: /browser/selenium-sauce
+layout: default
+---
+
 ## Testing with Selenium and Sauce Labs
 As we learned [earlier](../), the [Selenium WebDriver] API can be used to
 communicate with both *local* browsers (such as [PhantomJS], Chrome and Firefox)
