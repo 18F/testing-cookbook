@@ -1,6 +1,6 @@
 ---
-permalink: /browser/selenium-sauce/
 layout: default
+permalink: /browser/selenium-sauce/
 ---
 
 ## Testing with Selenium and Sauce Labs
