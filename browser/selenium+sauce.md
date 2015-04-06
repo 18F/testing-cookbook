@@ -74,7 +74,7 @@ for a specific port on your computer. For instance, if your web app is
 running at `localhost:8000` (on port 8000), you can just run `lt`:
 
 ```sh
-lt --port 800
+lt --port 8000
 ```
 
 and it'll print a unique URL that you can copy and paste into your browser,
