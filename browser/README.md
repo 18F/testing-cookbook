@@ -5,7 +5,8 @@ permalink: /browser/
 # Browser Testing
 Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Included in this directory:
 
-* The [automated browser testing guide](automation/) lists tools and techniques for browser automation
+* The [automated browser testing guide](automation/) lists tools and techniques for browser automation.
+* For a more in-depth look at automated cross-browser testing, check out the [Selenium & Sauce guide](selenium-sauce/).
 * The [VirtualBox testing guide](virtualbox/) gets you up and running with [VirtualBox] for manual testing
 * The [hosted service guide](services/) lists resources for manual testing and screenshot-taking
 
