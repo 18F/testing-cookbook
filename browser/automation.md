@@ -88,3 +88,5 @@ describe('library', function() {
 [Nightwatch]: http://nightwatchjs.org/
 [SlimerJS]: http://slimerjs.org/
 [VirtualBox]: http://virtualbox.org/
+[WebKit]: http://en.wikipedia.org/wiki/WebKit
+[Rhino]: https://github.com/mozilla/rhino
