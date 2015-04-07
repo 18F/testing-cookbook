@@ -75,37 +75,43 @@ In the case of Django, which has its own custom test runner, you'll need to do a
 Unlike unittest and nosetests asserts, which require developers to look up each assertion method on a base class or module, pytest supports standard python assertions:
 
 ```python
-assert True
-assert foo == bar
-assert foo in bar
-with pytest.raises(TypeError):
-    5 / 'ten'
+def test_assertions():
+    assert True
+    assert foo == bar
+    assert foo in bar
+    with pytest.raises(TypeError):
+        5 / 'ten'
 ```
 
 #### Fixtures
 pytest fixtures are plain functions decorated with `pytest.fixture`. Any test can then request a fixture by including the fixture name in its signature:
 
 ```python
-@pytest.fixture
-def some_api_client():
-    return ApiClient(**credentials)
+import pytest
+import StringIO
 
-def test_api_client(some_api_client):
-    endpoints = some_api_client.list_endpoints()
-    assert 'users' in endpoints
+@pytest.fixture
+def stream():
+    return StringIO.StringIO()
+
+def test_stream(stream):
+    stream.write('foo')
+    stream.seek(0)
+    assert stream.read() == 'foo'
 ```
 
-Fixtures also support teardown functions that are executed after tests finish:
+Fixtures also support teardown functions that are executed after tests finish. This is useful for any resource that has to be cleaned up after running tests (temporary files, database transactions, etc.).
 
 ```python
+import pytest
+import tempfile
+
 @pytest.yield_fixture
-def atomic(connection):
-    """Fixture that begins a transaction before each test and rolls it back
-    when the test is complete
+def temp_file():
+    """Open a temporary file on disk, then destroy after the test is finished.
     """
-    with connection.atomic() as atom:
+    with tempfile.TemporaryFile() as fp:
         yield
-        atom.rollback()
 ```
 
 ### How to Use It
