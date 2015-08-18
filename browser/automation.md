@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /browser/automation/
 ---
 # Automated Browser Testing

@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /browser/selenium-sauce/
 ---
 
