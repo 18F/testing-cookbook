@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /javascript/examples/
 ---
 # JavaScript testing examples

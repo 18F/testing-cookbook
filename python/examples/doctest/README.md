@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /python/examples/doctest/
 ---
 # Python tests with `doctest`
