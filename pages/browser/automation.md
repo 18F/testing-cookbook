@@ -1,7 +1,8 @@
 ---
+title: Automation 
 permalink: /browser/automation/
+parent: Browser testing
 ---
-# Automated Browser Testing
 This is an overview of a selection of automated testing tools for frontend [integration tests]. See the [README](..) for background.
 
 ## Selenium

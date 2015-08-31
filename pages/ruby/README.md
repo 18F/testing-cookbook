@@ -1,8 +1,7 @@
 ---
+title: Ruby testing
 permalink: /ruby/
 ---
-# Ruby Testing
-
 ## RSpec
 RSpec is a behavior-driven development (BDD) framework for the Ruby programming language.
 - [Official Page](http://rspec.info/)

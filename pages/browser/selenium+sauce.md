@@ -1,5 +1,7 @@
 ---
+title: Selenium and Sauce Labs
 permalink: /browser/selenium-sauce/
+parent: Browser testing
 ---
 
 ## Testing with Selenium and Sauce Labs
