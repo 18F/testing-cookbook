@@ -1,7 +1,7 @@
 ---
+title: Load testing
 permalink: /load/
 ---
-# Load Testing
 Load testing simulates the performance of an application under (typically concurrent) use. Load testing can be useful to estimate resources required for an application to perform well under varying levels of activity. Simple load tests may send requests to a set of URLs at fixed intervals; more realistic tests may simulate sequences of user behavior (load homepage, log in, upload a file, log out).
 
 ## Locust.io

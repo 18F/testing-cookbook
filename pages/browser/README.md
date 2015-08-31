@@ -1,7 +1,7 @@
 ---
+title: Browser testing
 permalink: /browser/
 ---
-# Browser Testing
 Browser testing is [integration testing] for client-side functionality—that is, anything that happens in a web browser. Included in this directory:
 
 * The [automated browser testing guide](automation/) lists tools and techniques for browser automation.

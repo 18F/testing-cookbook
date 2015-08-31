@@ -1,8 +1,7 @@
 ---
+title: JavaScript testing
 permalink: /javascript/
 ---
-# JavaScript Testing
-
 ### Mocha
 [Mocha] is a slick, simple testing framework for Node and browser JavaScript with asynchronous support and a [slew of reporters](http://mochajs.org/#reporters), including [TAP] output. See the [node-mocha example](examples/node-mocha) for usage.
 

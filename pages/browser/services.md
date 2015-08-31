@@ -1,7 +1,8 @@
 ---
+title: Browser testing services
 permalink: /browser/services/
+parent: Browser testing
 ---
-## Browser Testing Services
 These services allow you to run virtual browsers right in your browser:
 
 * [Browserling] is the original live cross-browser testing service. The [free plan](https://browserling.com/#pricing) gives you access to IE9 in 3-minute sessions at 1024x768. All other browsers are free.

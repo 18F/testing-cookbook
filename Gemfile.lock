@@ -1,3 +1,11 @@
+PATH
+  remote: ../guides-style
+  specs:
+    guides_style_18f (0.1.0)
+      jekyll (~> 2.5)
+      rouge (~> 1.9)
+      sass (~> 3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,10 +22,9 @@ GEM
     execjs (2.4.0)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
-    guides_style_18f (0.0.1)
-      jekyll (~> 2.5)
-      rouge (~> 1.9)
-      sass (~> 3.4)
+    go_script (0.1.4)
+      bundler (~> 1.10)
+      safe_yaml (~> 1.0)
     hitimes (1.2.2)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
@@ -72,7 +79,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  guides_style_18f
+  go_script
+  guides_style_18f!
   jekyll
 
 BUNDLED WITH

@@ -1,4 +1,8 @@
-# Mocha in Node
+---
+title: Mocha in Node
+permalink: /javascript/node-mocha/
+parent: JavaScript testing
+---
 This directory provides a simple example of writing unit tests for [Mocha](http://mochajs.com) in [Node](https://nodejs.org/).
 
 Here's what we did:
