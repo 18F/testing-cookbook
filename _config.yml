@@ -64,6 +64,9 @@ navigation:
 - text: Ruby testing
   url: ruby/
   internal: true
+- text: Go testing
+  url: go/
+  internal: true
 - text: Browser testing
   url: browser/
   internal: true
