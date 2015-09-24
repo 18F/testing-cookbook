@@ -40,10 +40,12 @@ func main() {
 #### Creating unit tests.
 1. Create a file called `hello_test.go` (all Go test files must have the suffix `_test.go`)
 2. Import `testing`
-3. Idiomatic Go practices tabular testing. This is where there is a single call to the function to be tested and that function is just tested with different inputs and the outputs are tested. For this example, create a simple struct that will hold simple string input and output variables.
-4. Create the various test cases to be tested.
-5. Create a function in which the name begins with `Test` and takes in `*testing.T` (used for asserts)
-6. Loop through the tests and assert that given output matches the expected output.
+3. Create a function in which the name begins with `Test` and takes in `*testing.T` (used by the test runner)
+  1. Tabular tests are **only** good for pure functions like this one. (**Refer to this [link](https://pages.18f.gov/automated-testing-playbook/principles-practices-idioms/#avoid-data-driven-tests) as to why you shouldn't use the tabular testing pattern otherwise**)
+  2. For our tabular test, create a simple struct that will hold simple string input and output variables.
+  3. Create the various test cases to be tested.
+  4. Loop through the tests.
+4. Use [Error](https://golang.org/pkg/testing/#T.Error), [Fail](https://golang.org/pkg/testing/#T.Fail) or [Fatal](https://golang.org/pkg/testing/#T.Fatal) to indicate that a test has failed.
 
 (_Refer to the numbering above to the comments in the code below_)
 
@@ -54,23 +56,22 @@ import (
 	"testing"  // 2
 )
 
-// 3
+// 3.2
 type sayTwiceTest struct {
 	input          string
 	expectedOutput string
 }
 
-// 4
+// 3.3
 var sayTwiceTests = []sayTwiceTest{
 	{"Hello", "HelloHello"},
 	{"Bye", "ByeBye"},
 }
 
-// 5
 func TestSayTwice(t *testing.T) {
-	// 6
-	for _, test := range sayTwiceTests {
+	for _, test := range sayTwiceTests {  // 3.4
 		if output := SayTwice(test.input); output != test.expectedOutput {
+			// 4
 			t.Errorf("Expected SayTwice to return (%s), Found (%s)\n", test.expectedOutput, output)
 		}
 	}
