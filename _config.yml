@@ -5,21 +5,24 @@ description: >
   The 18F Testing Cookbook contains recipes and best practices for automated
   and manual testing in lots of different environments, languages, stacks and
   platforms.
-baseurl: "/testing-cookbook"
-url: "http://18f.github.io/testing-cookbook/"
+url: "http://pages.18f.gov/testing-cookbook/"
 github_username:  shawnbot
 
 # Build settings
 markdown: redcarpet
 exclude:
-- README.md
-- LICENSE.md
 - CONTRIBUTING.md
-- deploy
-- vendor
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
 - go
 
 permalink: pretty
+highlighter: rouge
+
+sass:
+  style: :compressed
 
 # DOCter bits after this
 
@@ -41,17 +44,47 @@ navigation:
 - text: Introduction
   url: index.html
   internal: true
-- text: JavaScript
+- text: JavaScript testing
   url: javascript/
   internal: true
-- text: Python
+  children:
+  - text: Mocha in Node
+    url: node-mocha/
+    internal: true
+  - text: JavaScript testing examples
+    url: examples/
+    internal: true
+- text: Python testing
   url: python/
   internal: true
-- text: Ruby
+  children:
+  - text: Python test with `doctest`
+    url: doctest/
+    internal: true
+- text: Ruby testing
   url: ruby/
   internal: true
-- text: Browser Testing
+- text: Go testing
+  url: go/
+  internal: true
+- text: Browser testing
   url: browser/
+  internal: true
+  children:
+  - text: Automation
+    url: automation/
+    internal: true
+  - text: Selenium and Sauce Labs
+    url: selenium-sauce/
+    internal: true
+  - text: Browser testing services
+    url: services/
+    internal: true
+  - text: VirtualBox
+    url: virtualbox/
+    internal: true
+- text: Load testing
+  url: load/
   internal: true
 
 repos:
@@ -63,3 +96,14 @@ repos:
 brand_color: "#1188ff"
 
 google_analytics_ua: UA-48605964-19
+
+back_link:
+  url: "https://pages.18f.gov/guides/"
+  text: Read more 18F Guides
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "guides_style_18f_default"
