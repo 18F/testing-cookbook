@@ -5,20 +5,8 @@ permalink: /python/
 ## The `doctest` module
 With [doctest] you can write tests in your python docstrings. Check out [the example](examples/doctest).
 
-### What It Is
-
-### When to Use It
-
-### How to Use It
-
 ## The `unittest` framework
 For more involved tests, take a look at [unittest].
-
-### What It Is
-
-### When to Use It
-
-### How to Use It
 
 ## nose
 [nose] is a Python test runner which has a whole host of features, including plugins, which make testing in Python go a whole lot smoother, regardless
