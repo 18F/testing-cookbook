@@ -1,0 +1,87 @@
+---
+# .about.yml project metadata
+#
+# Short name that acts as the project identifier (required)
+name: testing-cookbook
+
+# Full proper name of the project (required)
+full_name: Testing Cookbook
+
+# The type of content in the repo
+# values: app, docs, policy
+type: docs
+
+# Describes whether a project team, working group/guild, etc. owns the repo (required)
+# values: guild, working-group, project
+owner_type: working-group
+
+# Name of the main project repo if this is a sub-repo; name of the working group/guild repo if this is a working group/guild subproject
+parent: wg-testing
+
+# Maturity stage of the project (required)
+# values: discovery, alpha, beta, live, sunset, transfer, end
+stage: beta
+
+# Description of the project
+description: The 18F testing cookbook contains recipes and best practices for automated and manual testing in lots of different environments, languages, stacks and platforms.
+
+# Tags that describe the project or aspects of the project
+tags: python,ruby,node,testing,unittests,automation
+- 
+
+# Should be 'true' if the project has a continuous build (required)
+# values: true, false
+testable: true
+
+# Team members contributing to the project (required)
+# Items:
+# - github: GitHub user name
+#   id: Internal team identifier/user name
+#   role: Team member's role; leads should be designated as 'lead'
+team:
+- github: mbland
+  id: mbland
+  role: lead
+- github: arowla
+  id: alison
+  role: lead
+- github: jmcarp
+  id: joshcarp
+  role: contributor
+- github: shawnbot
+  id: shawn
+  role: contributor
+- github: jscottiii
+  id: jamesscott
+  role: contributor
+
+# Technologies used to build the project
+stack:
+- jekyll
+- ruby
+- markdown
+
+# Brief description of the project's outcomes
+impact: To disseminate knowledge of testing best practices, and help teams get started testing more quickly.
+
+# Services used to supply project status information
+# Items:
+# - name: Name of the service
+#   category: Type of the service
+#   url: URL for detailed information
+#   badge: URL for the status badge
+services:
+- name: travis
+  category: ci
+  url: https://travis-ci.org/18F/testing-cookbook/
+  badge: https://travis-ci.org/18F/testing-cookbook.svg
+
+# Licenses that apply to the project and/or its components (required)
+# Items by property name pattern:
+#   .*:
+#     name: Name of the license from the Software Package Data Exchange (SPDX): https://spdx.org/licenses/
+#     url: URL for the text of the license
+licenses:
+  testing-cookbook:
+    name: CC0
+    url: https://github.com/18F/testing-cookbook/blob/18f-pages/LICENSE.md
