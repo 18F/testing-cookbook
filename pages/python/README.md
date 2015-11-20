@@ -2,121 +2,36 @@
 title: Python testing
 permalink: /python/
 ---
-## The `doctest` module
-With [doctest] you can write tests in your python docstrings. Check out [the example](examples/doctest).
 
-## The `unittest` framework
-For more involved tests, take a look at [unittest].
-
-## nose
-[nose] is a Python test runner which has a whole host of features, including plugins, which make testing in Python go a whole lot smoother, regardless
-of what module(s) you've used to write your tests.
-
-### What It Is
-*nose* is a test runner, which means that it does all of the following categories of things:
-
-  * discovers tests amongst your code;
-  * lets you define and choose subsets of tests to run;
-  * runs tests;
-  * runs coverage;
-  * and controls test output.
-
-### When to Use It
-It's a great idea to use nose from the very start, and it's not hard to start using. However, there are some specific cases where nose can really help out with existing projects.
-
-#### Assertions
-Nose includes assertion methods with PEP8-compliant names (`assert_equal`, not `assertEqual`):
-
-```python
-from nose.tools import *
-
-def my_test():
-    assert_equal(42, 42)
-    assert_not_in('camelCase', inflections)
-    with assert_raises(AttributeError):
-        object.foo
-```
-
-#### Fail Fast
-`nosetests -x`
-
-Use nose's "fail fast" feature when you've got a lot of test failures, but are just trying to see and fix the first failed test. Run that test quickly, fix, and repeat, moving on to the next.
-
-#### Capture/Suppress STDOUT/Logs
-By default, Nose captures STDOUT and logging output. This means that when you have test failures, it will capture STDOUT and logging output for each failed test and print it
-along with the failure message and stack trace, rather than letting STDOUT go to the console at runtime and get mixed up with everything else that might be going to STDOUT.
-Outputs become much more useful when they are split up by their test of origin.
-
-Note: Capturing STDOUT breaks debugging tools like pdb, ipdb, etc., and can be disabled using the `--nocapture` or `-s` flag.
-
-### How to Use It
-In projects without their own custom test runner, it's just a matter of running `pip install nose` and then invoking `nosetests` from the command line.
-
-In the case of Django, which has its own custom test runner, you'll need to do a little more work (but just a little). TODO: link to django-nose
+# Test runners
 
 ## pytest
-*pytest* is a test runner that supports python-style assertions, injectable fixtures, parameterized tests, and other helpful things.
+[pytest] is a mature testing framework that emphasizes flexible, no-boilerplate usage.  Unlike other test runners, pytest doesn't require special syntax for assertions: `assert 'pytest' in runners` instead of `self.assertIn('pytest', runners)`. Tests can be written as xUnit-style classes or as functions. Pytest can run tests written using nose, unittest, and doctest.
 
-#### Assertions
-Unlike unittest and nosetests asserts, which require developers to look up each assertion method on a base class or module, pytest supports standard python assertions:
+## nose
+[nose] is a test runner that extends the built-in unittest library by adding more powerful test discovery and execution. Nose has an extensive set of build-in and third-party plugins, including support for test coverage, parallel test execution, and test debugging.
 
-```python
-def test_assertions():
-    assert True
-    assert foo == bar
-    assert foo in bar
-    with pytest.raises(TypeError):
-        5 / 'ten'
-```
+## unittest
+[unittest] is an [xUnit]-style test framework included in the python standard library. Tests are structured into test suites (represented by python classes) containing test cases (represented by python methods); assertions are provided as methods. Tests written with unittest are typically run with a more powerful test runner, such as pytest or nose.
 
-#### Fixtures
-pytest fixtures are plain functions decorated with `pytest.fixture`. Any test can then request a fixture by including the fixture name in its signature:
+## doctest
+[doctest] identifies text that looks like python code in docstrings and verifies that these code examples run as expected. Doctest can be useful for prevent regressions in inline documentation, but isn't a full-fledged testing framework and shouldn't be used as such. Doctests can be run using the pytest and nose test runners.
 
-```python
-import pytest
-import StringIO
+# Testing tools
 
-@pytest.fixture
-def stream():
-    return StringIO.StringIO()
+* [tox](https://tox.readthedocs.org/en/latest/): Run tests using different python versions
+* [coverage.py](https://coverage.readthedocs.org/en/latest/): Measure test coverage; typically called by test runner plugins, not invoked directly
+* [mock](https://docs.python.org/3/library/unittest.mock.html): Replace code with mock objects and make assertions about how they have been used
+* [HTTPretty](http://falcao.it/HTTPretty/): Mock HTTP interactions; useful for testing code that interacts with remote APIs
+* [factory_boy](https://factoryboy.readthedocs.org/en/latest/): Create database fixtures for SQLAlchemy or Django models
 
-def test_stream(stream):
-    stream.write('foo')
-    stream.seek(0)
-    assert stream.read() == 'foo'
-```
+# Testing resources
 
-Fixtures also support teardown functions that are executed after tests finish. This is useful for any resource that has to be cleaned up after running tests (temporary files, database transactions, etc.).
+* http://docs.python-guide.org/en/latest/writing/tests/
+* http://pythontesting.net/test-podcast/
 
-```python
-import pytest
-import tempfile
-
-@pytest.yield_fixture
-def temp_file():
-    """Open a temporary file on disk, then destroy after the test is finished.
-    """
-    with tempfile.TemporaryFile() as fp:
-        yield
-```
-
-### How to Use It
-```
-pip install pytest
-py.test
-```
-
-Only run tests including "api" in the name:
-`py.test -k api`
-
-#### Useful Plugins
-
-* pytest-cov (test coverage)
-* pytest-cache (only re-run failing tests)
-* pytest-django (work with django)
-
-
+[pytest]: https://pytest.org/latest/
 [nose]: https://nose.readthedocs.org/en/latest/
 [doctest]: https://docs.python.org/3.4/library/doctest.html
 [unittest]: https://docs.python.org/3.4/library/unittest.html
-[pytest]: https://pytest.org/latest/
+[xUnit]: https://en.wikipedia.org/wiki/XUnit
