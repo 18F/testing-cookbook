@@ -11,6 +11,8 @@ permalink: /python/
 ## nose
 [nose] is a test runner that extends the built-in unittest library by adding more powerful test discovery and execution. Nose has an extensive set of build-in and third-party plugins, including support for test coverage, parallel test execution, and test debugging.
 
+Read on for [tips and examples](nose/).
+
 ## unittest
 [unittest] is an [xUnit]-style test framework included in the python standard library. Tests are structured into test suites (represented by python classes) containing test cases (represented by python methods); assertions are provided as methods. Tests written with unittest are typically run with a more powerful test runner, such as pytest or nose.
 

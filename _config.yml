@@ -58,8 +58,8 @@ navigation:
   url: python/
   internal: true
   children:
-  - text: Python test with `doctest`
-    url: doctest/
+  - text: Python testing with nose
+    url: nose/
     internal: true
 - text: Ruby testing
   url: ruby/
