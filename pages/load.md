@@ -53,5 +53,9 @@ Locust is currently used by the OpenFEC team; for an example configuration file,
     Requests/sec: 748868.53
     Transfer/sec:    606.33MB
 
-## Commercial solutions
-For commercial solutions, see https://blazemeter.com, https://blitz.io, or https://loader.io.
+## More options
+* Commercial solutions
+    * [BlazeMeter](https://blazemeter.com)
+    * [Blitz](https://blitz.io)
+    * [Loader](https://loader.io)
+* [List on Wikipedia](https://en.wikipedia.org/wiki/Web_server_benchmarking#Tools_for_benchmarking)
