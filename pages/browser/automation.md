@@ -14,6 +14,7 @@ This is an overview of a selection of automated testing tools for frontend [inte
 ### Selenium-based Tools
 * [Capybara] is a Ruby acceptance testing framework that uses Selenium under the hood.
 * [Nightwatch] is a Node.js "end-to-end" testing framework with a declarative API.
+* [Protractor] is an end-to-end test framework from the AngularJS team. It can be used to test both Angular and non-Angular applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would. It is really quick and simple to get started. 
 
 ## Sauce Labs
 [Sauce Labs] provides both [interactive](https://saucelabs.com/features/#features-manual-testing) (manual) and [automated](https://saucelabs.com/features/#features-cross-browser) remote cross-browser testing capabilities.
@@ -94,3 +95,4 @@ describe('library', function() {
 [VirtualBox]: http://virtualbox.org/
 [WebKit]: http://en.wikipedia.org/wiki/WebKit
 [Rhino]: https://github.com/mozilla/rhino
+[Protractor]:(https://angular.github.io/protractor/#/) 
