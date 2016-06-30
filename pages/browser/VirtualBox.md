@@ -44,7 +44,7 @@ If all goes well, you should see the Windows boot screen in a separate window an
 
 In XP (on the left) you can launch IE by clicking on the **Internet** link at the top; in Windows 7 you can either just type `internet` and hit <kbd>RETURN</kbd> in the *Search programs and files* input at the bottom, or navigate to **All Programs** > **Internet Explorer**.
 
-### 4. Test Your Stuff
+### <a name="test-your-stuff"></a> 5. Test Your Stuff
 If you're looking to test a public site, you should be able to just enter the URL into IE and test it interactively. To test sites running on your *host* OS, replace `localhost` or `127.0.0.1` in your local development URL with `10.0.2.2`. For instance, if you're testing the [18F site](https://github.com/18f/18f.gsa.gov) (or any Jekyll site serving on the default port 4000), you would use the URL `http://10.0.2.2:4000`. **Note**: If you leave off the `http://` prefix in Internet Explorer, it may send you to a Bing search.
 
 [VirtualBox]: http://virtualbox.org/
