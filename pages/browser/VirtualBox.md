@@ -45,20 +45,7 @@ If all goes well, you should see the Windows boot screen in a separate window an
 In XP (on the left) you can launch IE by clicking on the **Internet** link at the top; in Windows 7 you can either just type `internet` and hit <kbd>RETURN</kbd> in the *Search programs and files* input at the bottom, or navigate to **All Programs** > **Internet Explorer**.
 
 ### 4. Test Your Stuff
-If you're looking to test a public site, you should be able to just enter the URL into IE and test it interactively. There are two primary ways to test sites running on your *host* OS:
-
-1. Replace `localhost` or `127.0.0.1` in your local development URL with `10.0.2.2`. For instance, if you're testing the [18F site](https://github.com/18f/18f.gsa.gov) (or any Jekyll site serving on the default port 4000), you would use the URL `http://10.0.2.2:4000`. **Note**: If you leave off the `http://` prefix in Internet Explorer, it may send you to a Bing search.
-2. Use [localtunnel] to create a secure SSH tunnel:
-
-    ```sh
-    npm install -g localtunnel
-    lt --port 4000 # or whatever port your site is running on
-    ```
-
-  The `lt` command will take a second to create the tunnel, and when it's done it will print an address like `https://randomletters.localtunnel.me/` that you can copy from the terminal and paste into your any browser: Chrome running in the host OS, Internet Explorer running in the virtual machine, or *any other computer on the internet*. This is a great way to share your work with other people without having to get it deployed to a public server. It's also a great way to test your app over HTTPS, which will (we hope) be the protocol with which your site will be served in production.
-  
-  To close the tunnel, just type <kbd>CTRL+C</kbd> to exit `lt`.
+If you're looking to test a public site, you should be able to just enter the URL into IE and test it interactively. To test sites running on your *host* OS, replace `localhost` or `127.0.0.1` in your local development URL with `10.0.2.2`. For instance, if you're testing the [18F site](https://github.com/18f/18f.gsa.gov) (or any Jekyll site serving on the default port 4000), you would use the URL `http://10.0.2.2:4000`. **Note**: If you leave off the `http://` prefix in Internet Explorer, it may send you to a Bing search.
 
 [VirtualBox]: http://virtualbox.org/
 [Vagrant]: https://www.vagrantup.com/
-[localtunnel]: https://localtunnel.me
