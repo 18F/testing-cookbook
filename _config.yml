@@ -9,13 +9,13 @@ url: "http://pages.18f.gov/testing-cookbook/"
 github_username:  shawnbot
 
 # Build settings
-markdown: redcarpet
 exclude:
 - CONTRIBUTING.md
 - Gemfile
 - Gemfile.lock
 - LICENSE.md
 - README.md
+- '**/README.md'
 - go
 
 permalink: pretty
