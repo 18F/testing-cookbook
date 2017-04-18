@@ -1,20 +1,14 @@
-GIT
-  remote: https://github.com/18F/guides-style.git
-  revision: a3a350d3a73f964b11f9b87803ab7ff77087ee87
-  branch: pages-migration-updates
-  specs:
-    guides_style_18f (0.5.0)
-      jekyll
-      jekyll_pages_api
-      jekyll_pages_api_search
-      rouge
-      sass
-
 GEM
   remote: https://rubygems.org/
   specs:
     colorator (0.1)
     ffi (1.9.18)
+    guides_style_18f (1.0.0)
+      jekyll
+      jekyll_pages_api
+      jekyll_pages_api_search
+      rouge
+      sass
     htmlentities (4.3.4)
     jekyll (3.1.6)
       colorator (~> 0.1)
@@ -52,7 +46,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  guides_style_18f!
+  guides_style_18f
   jekyll (~> 3.1.0)
 
 BUNDLED WITH
